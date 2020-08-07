@@ -28,20 +28,23 @@ var coinMill = new Vue({
                 this.message += number
             }
         },
+
         ratewrite: function(c){/*切換至要換算的國家*/
              this.rate = c
-
         },
+
         Backspace: function(){/*刪除最後一位*/
           if(this.message.length == 1){
               this.message="0"
           }else{
              this.message = this.message.substring(0,this.message.length-1)
-            
           }
         },
+
         AllClear: function(){/*全部清除*/
             this.message = '0'
+            
         }       
     }
 })
+
