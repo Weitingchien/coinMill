@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style> /*Google-Fonts*/
+        @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+    </style>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="coinMillstyle.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+  <div id="coin" class="content">
+    <div id="Ninit">(NTD)</div>
+    <input type="text" disabled="disabled" v-model="message"></input><br>
+    <div id="ratechange"> {{ rate }}</div>
+    <input type="text" disabled="disabled" v-model="ratechange"></input>
+     <div class="inner">
+        <button class="co" v-on:click="cowrite('7')">7</button>
+        <button class="co" v-on:click="cowrite('8')">8 </button>
+        <button class="co" v-on:click="cowrite('9')">9 </button>
+        <button class="co cotitle" v-on:click="ratewrite('(USD)')">(USD)</button><br>
+
+        <button class="co" v-on:click="cowrite('6')">6</button>
+        <button class="co" v-on:click="cowrite('5')">5</button>
+        <button class="co" v-on:click="cowrite('4')">4</button>
+        <button class="co cotitle" v-on:click="ratewrite('(JPY)')">(JPY)</button><br>
+
+        <button class="co" v-on:click="cowrite('3')">3</button>
+        <button class="co" v-on:click="cowrite('2')">2</button>
+        <button class="co" v-on:click="cowrite('1')">1</button>
+        <button class="co cotitle" v-on:click="ratewrite('(KRW)')">(KRW)</button><br>
+
+        <button class="co" v-on:click="cowrite('0')">0</button>
+        <button class="co" v-on:click="Backspace('BK')">BK</button>
+        <button class="co" v-on:click="AllClear('AC')">AC</button>
+        <button class="co cotitle" v-on:click="ratewrite('(CNY)')">(CNY)</button><br>
+
+     </div>
+ </div>
+
+<script src="https://unpkg.com/vue@2.6.11/dist/vue.js"></script>   
+<script src="coinMill.js"></script> 
+</body>
+</html>
