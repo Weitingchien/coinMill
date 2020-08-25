@@ -40,7 +40,6 @@ var coinMill = new Vue({
              this.message = this.message.substring(0,this.message.length-1)
           }
         },
-
         AllClear: function(){/*全部清除*/
             this.message = '0'
             
